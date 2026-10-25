@@ -1,0 +1,36 @@
+# .NET build output
+**/bin/
+**/obj/
+**/.vs/
+**/.vscode/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Node / Vite
+**/node_modules/
+**/dist/
+**/.vite/
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# IDE / editor / OS
+.idea/
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.tmp
+
+# Local tooling caches
+coverage/
+.npm/
+
+# Keep source and migrations tracked
+!backend/Migrations/
+!backend/Migrations/*.cs
+!backend/Migrations/*.Designer.cs

@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink: #1b2a41;
+  --color-paper: #f4f6f9;
+  --color-surface: #ffffff;
+  --color-line: #d5dbe3;
+  --color-route: #2457c5;
+
+  --color-created-text: #475569;
+  --color-created-bg: #e8ecf1;
+  --color-pickedup-text: #9a5b0a;
+  --color-pickedup-bg: #fdf0d5;
+  --color-delivered-text: #1d4e9e;
+  --color-delivered-bg: #dce8fa;
+  --color-accepted-text: #17693a;
+  --color-accepted-bg: #ddf3e4;
+  --color-partiallyaccepted-text: #6b3fa0;
+  --color-partiallyaccepted-bg: #ebe1f7;
+  --color-rejected-text: #a4262c;
+  --color-rejected-bg: #fbe1e2;
+
+  --font-sans: 'IBM Plex Sans', 'ui-sans-serif', 'system-ui', sans-serif;
+}
+
+:root {
+  font-family: 'IBM Plex Sans', 'ui-sans-serif', 'system-ui', sans-serif;
+  color: #1b2a41;
+  background-color: #f4f6f9;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  background: #f4f6f9;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: #f4f6f9;
+  color: #1b2a41;
+  font-family: 'IBM Plex Sans', 'ui-sans-serif', 'system-ui', sans-serif;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+:focus-visible {
+  outline: 2px solid #2457c5;
+  outline-offset: 2px;
+}
+
+::selection {
+  background: rgba(36, 87, 197, 0.15);
+}
